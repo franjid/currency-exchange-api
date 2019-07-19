@@ -1,0 +1,21 @@
+{
+  "description": "Test for StayForLong",
+  "authors": [
+    {
+      "name": "Fran Iruela",
+      "email": "franjid@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Stayforlong\\": "src/",
+      "Stayforlong\\Tests\\": "tests/"
+    }
+  }
+}
