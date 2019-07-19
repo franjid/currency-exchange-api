@@ -4,8 +4,9 @@ namespace Stayforlong\Domain\Type\Collection;
 
 use Stayforlong\Domain\Exception\InvalidTypeException;
 use Stayforlong\Domain\Type\ValueObject\Currency;
+use Stayforlong\Domain\Type\ValueObject\CurrencyRates;
 
-class CurrencyCollection
+class CurrencyRatesCollection
 {
     /** @var Currency[] $currencies */
     private $currencies = [];
@@ -13,7 +14,7 @@ class CurrencyCollection
     public function __construct(array $currencies)
     {
         foreach ($currencies as $currency) {
-            if (!$currency instanceof Currency) {
+            if (!$currency instanceof CurrencyRates) {
                 throw new InvalidTypeException();
             }
 
